@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Nhóm 10</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .member-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .member-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            color: white;
+        }
+
+        .member-info {
+            padding: 20px;
+        }
+
+        .member-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .member-role {
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .member-description {
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .member-contact {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-size: 0.85em;
+        }
+
+        .member-contact p {
+            color: #999;
+            margin: 5px 0;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .members-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👥 Giới Thiệu Nhóm 10</h1>
+        
+        <div class="members-grid">
+            <!-- Thành viên 1 -->
+            <div class="member-card">
+                <div class="member-image">👤</div>
+                <div class="member-info">
+                    <div class="member-name">Thành viên 1</div>
+                    <div class="member-role">Trưởng nhóm</div>
+                    <div class="member-description">
+                        Mô tả ngắn về thành viên 1, vai trò và trách nhiệm trong nhóm.
+                    </div>
+                    <div class="member-contact">
+                        <p><span class="contact-label">Email:</span> member1@email.com</p>
+                        <p><span class="contact-label">Điện thoại:</span> 0123456789</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thành viên 2 -->
+            <div class="member-card">
+                <div class="member-image">👤</div>
+                <div class="member-info">
+                    <div class="member-name">Thành viên 2</div>
+                    <div class="member-role">Phó nhóm</div>
+                    <div class="member-description">
+                        Mô tả ngắn về thành viên 2, vai trò và trách nhiệm trong nhóm.
+                    </div>
+                    <div class="member-contact">
+                        <p><span class="contact-label">Email:</span> member2@email.com</p>
+                        <p><span class="contact-label">Điện thoại:</span> 0123456790</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thành viên 3 -->
+            <div class="member-card">
+                <div class="member-image">👤</div>
+                <div class="member-info">
+                    <div class="member-name">Thành viên 3</div>
+                    <div class="member-role">Thành viên</div>
+                    <div class="member-description">
+                        Mô tả ngắn về thành viên 3, vai trò và trách nhiệm trong nhóm.
+                    </div>
+                    <div class="member-contact">
+                        <p><span class="contact-label">Email:</span> member3@email.com</p>
+                        <p><span class="contact-label">Điện thoại:</span> 0123456791</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thành viên 4 -->
+            <div class="member-card">
+                <div class="member-image">👤</div>
+                <div class="member-info">
+                    <div class="member-name">Thành viên 4</div>
+                    <div class="member-role">Thành viên</div>
+                    <div class="member-description">
+                        Mô tả ngắn về thành viên 4, vai trò và trách nhiệm trong nhóm.
+                    </div>
+                    <div class="member-contact">
+                        <p><span class="contact-label">Email:</span> member4@email.com</p>
+                        <p><span class="contact-label">Điện thoại:</span> 0123456792</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Nhóm 10. Tất cả các quyền được bảo lưu.</p>
+        </footer>
+    </div>
+</body>
+</html>
