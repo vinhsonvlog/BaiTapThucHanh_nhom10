@@ -1,7 +1,7 @@
 # KẾ HOẠCH LÀM VIỆC - NHÓM 10
 **Dự án:** Website Quản lý (Bài tập thực hành Git)
 **Người lập kế hoạch:** Thành viên 4
-
+Review code tuần 1
 ---
 
 ## 1. MỤC TIÊU DỰ ÁN
